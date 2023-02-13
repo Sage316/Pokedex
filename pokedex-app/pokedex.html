@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IWA-Whitenboard</title>
-    <link rel="stylesheet" href="./pokedex.css">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css">
     
 </head>
 
@@ -22,11 +22,14 @@
         <!-- Create Form -->
         <!-- This form uses dynamic css class assigning to achieve modal functionality -->
         <div id="create-form">
-            <div id="pokemon type">
-            <div id="pokemon info">
-                
+            <div id="pokemon-info">
+            <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+                <div id="pokemon-types">
+                    
+                </div>
+                <div id="pokemon-description"></div>
             </div>
-            </div>
+      
 
             <!-- Name of pokemon in here -->
             <input type="text" placeholder="Valid Pokemon's name here.." name="name" id="name">
@@ -74,6 +77,13 @@
             <!-- When button is clicked functionality will run -->
             <button onclick="logic()"> Add Pokemon </button>
 
+           
+            <!-- <form action="https://www.google.com/search" target="_blank">
+                 <input type="text" id="q"> -->
+               
+                <!-- <input type="submit" id="search" onclick="setSearchTerm()"> -->
+              <!-- </form> --> 
+
         </div>
 
     </header>
@@ -82,7 +92,7 @@
     <main class="center">
 
         <div class="side">
-
+            <p>POOP</p>
         </div>
 
         <!-- Main App Space -->
@@ -91,23 +101,28 @@
 
             <ul id="pokedex-entries">
                 <!-- Append entries here -->
+                
             </ul>
 
         </div>
 
         <div class="side">
+            <button id="preview-button">Preview</button>
 
+            <div id="preview-output">
+                
+            </div>
         </div>
 
     </main>
 
 
     <footer class="top">
-
+        <p>Poop???</p>
     </footer>
 
     <!-- JavaScript file link -->
-    <script src="./pokedex-objects-dom.js"></script>
+    <script src="pokedex.js"></script>
 
 </body>
 <!-- End of HTML Document Body -->
