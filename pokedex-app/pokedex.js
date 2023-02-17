@@ -37,7 +37,7 @@ function logic() {
     const previewOutput = document.querySelector('#preview-output');
 
     preview.addEventListener('click', () => {
-        // This if statement needs fixing for validation
+        
         if(pokemon.pokemonName.length == 0) {
             alert("Please enter a valid Pokemon")
         } 
@@ -47,9 +47,11 @@ function logic() {
                 <input name="q" hidden value="${name}">
                  <input type="submit">
             </form>`;
-
         previewOutput.innerHTML = previewButton;
-    })
+        document.getElementById('name').value='';
+
+    });
+
 
 };
 

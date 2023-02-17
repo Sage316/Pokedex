@@ -3,7 +3,17 @@
 -------------------------------------------*/
 
 /* --- Modal Styling ---*/
-
+select{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    color: black
+    
+  }
+  select option { color: black; }
+  select option:first-child{
+    background-color: black
+  }
 
 /* --- Dynamic classes for types ---*/
     
@@ -48,7 +58,8 @@ font-family: Helvetica, sans-serif;
 .top {
 min-height: 15vh;
 background-color: rgb(180, 45, 45);
-}
+}  
+
 
 /* Center content */
 
